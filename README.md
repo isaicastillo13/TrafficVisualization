@@ -22,10 +22,3 @@ Antes de empezar, asegúrate de tener lo siguiente instalado:
 
 - Un navegador web moderno (Chrome, Firefox, etc.)
 - Cuenta en [Mapbox](https://account.mapbox.com/auth/signup/) para obtener tu **API Key**.
-
-## Instalación y Configuración
-
-1. Clona este repositorio en tu máquina local:
-
-   ```bash
-   git clone https://github.com/tu-usuario/nombre-del-repositorio.git
