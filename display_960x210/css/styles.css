@@ -1,0 +1,105 @@
+@font-face {
+    font-family: 'Avenir';
+    src: url('/font/Avenir\ Next.ttc') format('truetype');
+}
+
+:root {
+    --verde: #97d600;
+    --azul: #0f069f;
+    --azulNavy: #095152;
+    --blanco: #FFFFFF;
+    /* fuente */
+    --fuente: 'Avenir';
+    /* size */
+    --sizeSmall: 12px;
+    --sizeMedium: 20px;
+    --sizeLarge: 28px;
+}
+
+.timeArrival {
+    display: grid;
+    width: 960px;
+    height: 210px;
+    grid-template-columns: 1fr 3fr;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--verde);
+    color: var(--azul);
+    padding: 4px;
+    font-family: var(--fuente);
+    .p-small {
+        font-size: var(--sizeSmall);
+    }
+}
+
+.timeArrival__visual {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.timeArrival__visual img {
+    width: auto;
+    height: 80px;
+}
+
+.timeArrival__information {
+    display: flex;
+    font-size: var(--sizeMedium);
+    width: 100%;
+    height: 100%;
+    overflow: hidden; /* Asegura que el border-radius se aplique correctamente */
+}
+
+.information__table {
+    width: 100%;
+    border-collapse: separate; /* Cambiar a 'separate' para que funcione con border-radius */
+    border-spacing: 0; /* Elimina el espaciado entre celdas */
+    border-radius: 16px; /* Aplica border-radius a la tabla completa */
+    overflow: hidden; /* Asegura que el contenido respete los bordes redondeados */
+}
+
+.table__header {
+    font-size: var(--sizeLarge);
+    font-weight: bold;
+}
+
+.table__body {
+    background-color: transparent; /* Elimina el borde para que no interfiera */
+    tr{
+        text-align: center;
+    }
+}
+
+.bg--blue {
+    background-color: var(--azul);
+    color: var(--blanco);
+}
+
+.bg--blueNavy {    
+    background-color: var(--azulNavy);
+    color: var(--blanco);
+}
+
+
+
+td {
+    padding-left: 16px;
+    border-bottom: 1px solid transparent; /* Asegura que no haya solapamiento de bordes */
+}
+
+/* Aplica los bordes redondeados a las primeras y últimas filas */
+.table__body tr:first-child td:first-child {
+    border-top-left-radius: 16px;
+}
+.table__body tr:first-child td:last-child {
+    border-top-right-radius: 16px;
+}
+.table__body tr:last-child td:first-child {
+    border-bottom-left-radius: 16px;
+}
+.table__body tr:last-child td:last-child {
+    border-bottom-right-radius: 16px;
+}
