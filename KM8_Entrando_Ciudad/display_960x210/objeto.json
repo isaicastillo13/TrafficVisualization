@@ -1,0 +1,55 @@
+{
+    "code": "Ok",
+    "destinations": [
+        {
+            "distance": 39.855345532,
+            "name": "Carretera a El Salvador",
+            "location": [
+                -90.483111,
+                14.575311
+            ]
+        },
+        {
+            "distance": 2.659025425,
+            "name": "",
+            "location": [
+                -90.482567,
+                14.580601
+            ]
+        },
+        {
+            "distance": 2.023353424,
+            "name": "",
+            "location": [
+                -90.495818,
+                14.581833
+            ]
+        },
+        {
+            "distance": 0,
+            "name": "32 Calle",
+            "location": [
+                -90.50523,
+                14.614839
+            ]
+        }
+    ],
+    "durations": [
+        [
+            0,
+            321.6,
+            488.8,
+            835.7
+        ]
+    ],
+    "sources": [
+        {
+            "distance": 39.855345532,
+            "name": "Carretera a El Salvador",
+            "location": [
+                -90.483111,
+                14.575311
+            ]
+        }
+    ]
+}
